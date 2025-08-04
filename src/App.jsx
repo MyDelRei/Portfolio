@@ -8,6 +8,9 @@ import AboutMe from "./pages/AboutMe.jsx";
 import Header from "./components/Header.jsx";
 import Highlights from "./pages/Highlights.jsx";
 import Contact from "./pages/Contact.jsx"; // your second page
+import './index.css'; // or your actual CSS filename
+
+
 
 const App = () => {
     return (
