@@ -62,7 +62,7 @@ const PortfolioHighlights = () => {
             title: "School Management System",
             description:
                 "An all-in-one system to manage student records, attendance, grades, and teachers—streamlining school operations to help ensure efficiency and smooth workflow.",
-            image: "/img/SMS.jpg",
+            image: "/img/SMS.png",
         },
     ];
 

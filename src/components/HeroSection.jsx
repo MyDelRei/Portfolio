@@ -90,7 +90,7 @@ const HeroSection = () => {
             <div className="flex flex-col items-center sm:items-center md:items-start gap-8 max-w-5xl w-full text-center sm:text-center md:text-left">
                 <img
                     ref={picRef}
-                    src="/img/pfp.jpeg"
+                    src="/img/pfp.png"
                     alt="Profile"
                     className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-4 border-zinc-700"
                 />

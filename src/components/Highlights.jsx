@@ -119,7 +119,7 @@ const Highlight = () => {
             title: "School Management System",
             description:
                 "An all-in-one system to manage student records, attendance, grades, and teachers—streamlining school operations to help ensure efficiency and smooth workflow.",
-            image: "/img/SMS.jpg",
+            image: "/img/SMS.png",
         },
     ];
 
@@ -137,7 +137,7 @@ const Highlight = () => {
                     name: "Certificate of Completion",
                     description:
                         "This certificate from the ETEC Center in Cambodia confirms my successful completion of comprehensive computer training courses. The curriculum included foundational and advanced principles of Java programming, database management with MySQL, and skills in using iReport for data visualization. I also completed project-based courses to apply these skills in a practical setting.",
-                    image: "/img/Certi2.jpg",
+                    image: "/img/Certi2.png",
                 }
             ],
         },
