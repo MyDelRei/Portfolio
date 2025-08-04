@@ -113,13 +113,13 @@ const Highlight = () => {
             title: "Personal Finance Tracker",
             description:
                 "A tool to manage income, expenses, and savings with a clear overview of financial activity—perfect for tracking spending, setting budgets, and reaching goals.",
-            image: "/img/PersonalExpensesTracker.jpg",
+            image: "/PersonalExpensesTracker.jpg",
         },
         {
             title: "School Management System",
             description:
                 "An all-in-one system to manage student records, attendance, grades, and teachers—streamlining school operations to help ensure efficiency and smooth workflow.",
-            image: "/img/SMS.png",
+            image: "/SMS.png",
         },
     ];
 
@@ -131,13 +131,13 @@ const Highlight = () => {
                     name: "Alison Java Programming",
                     description:
                         "This is a sample certificate that I received from a free course on Alison after completing the Java Programming Masterclass. Due to the certification fee, which I can't afford, I was only able to obtain the sample version.",
-                    image: "/img/Certi1.png",
+                    image: "/Certi1.png",
                 },
                 {
                     name: "Certificate of Completion",
                     description:
                         "This certificate from the ETEC Center in Cambodia confirms my successful completion of comprehensive computer training courses. The curriculum included foundational and advanced principles of Java programming, database management with MySQL, and skills in using iReport for data visualization. I also completed project-based courses to apply these skills in a practical setting.",
-                    image: "/img/Certi2.png",
+                    image: "/Certi2.png",
                 }
             ],
         },
@@ -148,7 +148,7 @@ const Highlight = () => {
                     name: "Certificate of Appreciation: Event Volunteer",
                     description:
                         "Certificate of Appreciation for my role as a volunteer event organizer for Miss Planet International 2024. My efforts and dedication were officially recognized as being instrumental in the successful execution of the event. This experience honed my skills in event coordination, teamwork, and contributing to high-stakes projects, all while managing diverse tasks to ensure a smooth and successful operation.",
-                    image: "/img/Certi3.png",
+                    image: "/Certi3.png",
                 }
 
                 ]

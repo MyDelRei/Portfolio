@@ -41,27 +41,27 @@ const OfferSection = () => {
 
     const cardData = [
         {
-            icon: '/img/icon1.png',
+            icon: '/icon1.png',
             title: "What I Bring",
             description: "A solid foundation in software development with a focus on building reliable, scalable, and maintainable applications from the ground up."
         },
         {
-            icon: '/img/icon2.png',
+            icon: '/icon2.png',
             title: "My Value to the Team",
             description: "Strong problem-solving skills with a focus on clean, efficient code. I thrive in teams and enjoy turning complex challenges into simple, scalable solutions."
         },
         {
-            icon: '/img/icon3.png',
+            icon: '/icon3.png',
             title: "Why Choose Me",
             description: "A continuous learner mindset, always eager to deepen my knowledge through research, documentation, browsering, and hands-on practice."
         },
         {
-            icon: '/img/icon4.png',
+            icon: '/icon4.png',
             title: "My Strengths & Skills",
             description: "Adaptability to new technologies and frameworks, with a drive to deliver high-quality solutions aligned with business goals."
         },
         {
-            icon: '/img/icon5.png',
+            icon: '/icon5.png',
             title: "Key Qualities I Bring",
             description: "Enthusiasm for turning complex requirements into practical, user-friendly software."
         }

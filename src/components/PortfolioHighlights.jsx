@@ -56,13 +56,13 @@ const PortfolioHighlights = () => {
             title: "Personal Finance Tracker",
             description:
                 "A tool to manage income, expenses, and savings with a clear overview of financial activity—perfect for tracking spending, setting budgets, and reaching goals.",
-            image: "/img/PersonalExpensesTracker.jpg",
+            image: "/PersonalExpensesTracker.jpg",
         },
         {
             title: "School Management System",
             description:
                 "An all-in-one system to manage student records, attendance, grades, and teachers—streamlining school operations to help ensure efficiency and smooth workflow.",
-            image: "/img/SMS.png",
+            image: "/SMS.png",
         },
     ];
 
