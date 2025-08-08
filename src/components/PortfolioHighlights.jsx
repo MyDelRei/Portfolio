@@ -25,6 +25,9 @@ import {
 import { GrOracle } from "react-icons/gr";
 import { animate } from "motion";
 import {Link} from "react-router-dom";
+import Certi1 from "../assets/Certi1.png";
+import SMS from "../assets/SMS.png";
+import PersonalExpensesTracker from "../assets/PersonalExpensesTracker.jpg";
 
 const PortfolioHighlights = () => {
     const [activeTab, setActiveTab] = useState("Tech Stack");
@@ -56,13 +59,13 @@ const PortfolioHighlights = () => {
             title: "Personal Finance Tracker",
             description:
                 "A tool to manage income, expenses, and savings with a clear overview of financial activity—perfect for tracking spending, setting budgets, and reaching goals.",
-            image: "/PersonalExpensesTracker.jpg",
+            image: PersonalExpensesTracker,
         },
         {
             title: "School Management System",
             description:
                 "An all-in-one system to manage student records, attendance, grades, and teachers—streamlining school operations to help ensure efficiency and smooth workflow.",
-            image: "/SMS.png",
+            image: SMS,
         },
     ];
 
@@ -70,7 +73,7 @@ const PortfolioHighlights = () => {
         title: "Alison Java programming",
         description:
             "This is a sample certificate that I received from a free course on Alison after completing the Java Programming Masterclass. Due to the certification fee, which I can't afford, I was only able to obtain the sample version.",
-        image: "/img/Certi1.png",
+        image: Certi1,
     };
 
     // Slide-in stagger animation for cards inside active tab

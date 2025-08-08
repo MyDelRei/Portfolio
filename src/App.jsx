@@ -24,9 +24,9 @@ const App = () => {
                 <Header />
                 <Routes>
                     <Route path="/Portfolio" element={<LandingPage />} />
-                    <Route path="/about" element={<AboutMe />} />
-                    <Route path="/highlights" element={<Highlights />} />Contact
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/Portfolio/about" element={<AboutMe />} />
+                    <Route path="/Portfolio/highlights" element={<Highlights />} />Contact
+                    <Route path="/Portfolio/contact" element={<Contact />} />
                 </Routes>
             </Router>
         </div>

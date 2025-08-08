@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { animate } from "motion";
 import { MdDownload, MdContactSupport } from "react-icons/md";
+import pfp from "../assets/pfp.png";
+import resume from "../assets/MrLeangPanhasaovordy.pdf";
 
 const HeroSection = () => {
     const sectionRef = useRef(null);
@@ -90,7 +92,7 @@ const HeroSection = () => {
             <div className="flex flex-col items-center sm:items-center md:items-start gap-8 max-w-5xl w-full text-center sm:text-center md:text-left">
                 <img
                     ref={picRef}
-                    src="/pfp.png"
+                    src={pfp}
                     alt="Profile"
                     className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-4 border-zinc-700"
                 />
@@ -127,9 +129,11 @@ const HeroSection = () => {
                         </a>
 
 
+
                         <a
                             ref={(el) => (buttonsRef.current[1] = el)}
-                            href="#"
+                            href={resume}
+                            download="BackendDeveloperCV.pdf"
                             className="inline-flex items-center justify-center gap-2 bg-zinc-800 text-neutral-200 px-6 py-3 rounded-full border border-zinc-700 hover:bg-zinc-700 transition-colors font-palanquin-custom font-medium w-[215px] h-[72px]"
                         >
                             <span className="text-[18px] sm:text-[20px]">Download CV</span>

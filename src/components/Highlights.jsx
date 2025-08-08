@@ -34,6 +34,12 @@ import {
 import { animate } from "motion";
 import { PiFileCSharpLight } from "react-icons/pi";
 import {GrOracle} from "react-icons/gr";
+import Certi1 from "../assets/Certi1.png";
+import Certi2 from "../assets/Certi2.jpg";
+import Certi3 from "../assets/Certi3.png";
+import SMS from "../assets/SMS.png";
+import PersonalExpensesTracker from "../assets/PersonalExpensesTracker.jpg";
+
 
 const Highlight = () => {
     const [activeTab, setActiveTab] = useState("Tech Stack");
@@ -113,13 +119,13 @@ const Highlight = () => {
             title: "Personal Finance Tracker",
             description:
                 "A tool to manage income, expenses, and savings with a clear overview of financial activity—perfect for tracking spending, setting budgets, and reaching goals.",
-            image: "/PersonalExpensesTracker.jpg",
+            image: PersonalExpensesTracker,
         },
         {
             title: "School Management System",
             description:
                 "An all-in-one system to manage student records, attendance, grades, and teachers—streamlining school operations to help ensure efficiency and smooth workflow.",
-            image: "/SMS.png",
+            image: SMS,
         },
     ];
 
@@ -131,13 +137,13 @@ const Highlight = () => {
                     name: "Alison Java Programming",
                     description:
                         "This is a sample certificate that I received from a free course on Alison after completing the Java Programming Masterclass. Due to the certification fee, which I can't afford, I was only able to obtain the sample version.",
-                    image: "/Certi1.png",
+                    image: Certi1,
                 },
                 {
                     name: "Certificate of Completion",
                     description:
                         "This certificate from the ETEC Center in Cambodia confirms my successful completion of comprehensive computer training courses. The curriculum included foundational and advanced principles of Java programming, database management with MySQL, and skills in using iReport for data visualization. I also completed project-based courses to apply these skills in a practical setting.",
-                    image: "/Certi2.png",
+                    image: Certi2,
                 }
             ],
         },
@@ -148,7 +154,7 @@ const Highlight = () => {
                     name: "Certificate of Appreciation: Event Volunteer",
                     description:
                         "Certificate of Appreciation for my role as a volunteer event organizer for Miss Planet International 2024. My efforts and dedication were officially recognized as being instrumental in the successful execution of the event. This experience honed my skills in event coordination, teamwork, and contributing to high-stakes projects, all while managing diverse tasks to ensure a smooth and successful operation.",
-                    image: "/Certi3.png",
+                    image: Certi3,
                 }
 
                 ]

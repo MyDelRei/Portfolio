@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { AnimatePresence, motion, animate } from "motion/react";
 import { Link } from "react-router-dom";
+import resume from "../../assets/MrLeangPanhasaovordy.pdf";
 
 const NavBar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -49,19 +50,25 @@ const NavBar = () => {
             transition={{ duration: 0.25 }}
             className="w-[220px] h-[360px] flex flex-col justify-center space-y-2 p-4 absolute right-0 mt-[25px] bg-[#232323] border border-[#444444] rounded-[22px] shadow-lg z-10"
         >
-            <Link to="/about" onClick={() => setIsDropdownOpen(false)} className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full">
+            <Link to="/Portfolio/about" onClick={() => setIsDropdownOpen(false)} className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full">
                 About
             </Link>
-            <Link to="/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">
+            <Link to="/Portfolio/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">
                 Tech stack
             </Link>
 
-            <Link to="/highlights" onClick={() => setIsDropdownOpen(false)} className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full">
+            <Link to="/Portfolio/highlights" onClick={() => setIsDropdownOpen(false)} className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full">
                 Projects
             </Link>
-            <Link to="/resume" onClick={() => setIsDropdownOpen(false)} className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full">
+            <a
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsDropdownOpen(false)}
+                className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full"
+            >
                 Resume
-            </Link>
+            </a>
             <a href="https://github.com/MyDelRei" target="_blank" className="flex items-center px-4 py-2 text-white rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom">
                 <span className="text-[26px] pr-[15px]"><FaGithub /></span>
                 <span className="text-[20px]">Github</span>
@@ -114,15 +121,23 @@ const NavBar = () => {
                         transition={{ duration: 0.4 }}
                         className="fixed top-0 left-0 w-full z-50 bg-transparent flex justify-between items-center py-4 px-6"
                     >
-                        <Link to="/" ref={logoRef} className="text-[50px] font-irish-grover-custom text-white py-[30px] px-[70px] mobile:px-0 mobile:py-0 mobile:text-[40px] mobile:text-center">
+                        <Link to="/Portfolio" ref={logoRef} className="text-[50px] font-irish-grover-custom text-white py-[30px] px-[70px] mobile:px-0 mobile:py-0 mobile:text-[40px] mobile:text-center">
                             Saovordy
                         </Link>
                         <div ref={navRef} className="hidden md:flex items-center lg:mr-[58px]">
                             <div className="w-[440px] h-[60px] flex items-center space-x-1 bg-[#303030] p-2 rounded-full border-2 border-[#444444] shadow-lg">
-                                <Link to="/about" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">About</Link>
-                                <Link to="/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">Tech </Link>
-                                <Link to="/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">Projects</Link>
-                                <Link to="/resume" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">Resume</Link>
+                                <Link to="/Portfolio/about" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">About</Link>
+                                <Link to="/Portfolio/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">Tech </Link>
+                                <Link to="/Portfolio/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">Projects</Link>
+                                <a
+                                    href={resume}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() => setIsDropdownOpen(false)}
+                                    className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full"
+                                >
+                                    Resume
+                                </a>
                                 <div className="relative">
                                     <button
                                         onClick={toggleDropdown}
