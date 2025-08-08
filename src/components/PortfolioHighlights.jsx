@@ -242,7 +242,7 @@ const PortfolioHighlights = () => {
 
             {/* Show More Button */}
             <div className="flex justify-center mt-10">
-                <Link className="flex items-center px-6 py-3 rounded-full bg-[#252525] text-white transition-all duration-300 hover:bg-[#3b3b3b] hover:shadow-lg" to="/highlights">
+                <Link className="flex items-center px-6 py-3 rounded-full bg-[#252525] text-white transition-all duration-300 hover:bg-[#3b3b3b] hover:shadow-lg" to="/Portfolio/highlights">
                     Show more
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
