@@ -98,13 +98,13 @@ const NavBar = () => {
                 <span className="text-[26px] pr-[15px]"><FaGithub /></span>
                 <span className="text-[20px]">Github</span>
             </a>
-            <Link
-                to="/contact"
+            <a
+                href="#footer"
                 className="flex items-center px-4 py-2 text-white rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom"
             >
                 <span className="text-[26px] pr-[15px]"><MdEmail /></span>
                 <span className="text-[20px]">Contact</span>
-            </Link>
+            </a>
 
 
         </motion.div>

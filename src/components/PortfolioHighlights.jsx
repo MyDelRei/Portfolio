@@ -168,26 +168,49 @@ const PortfolioHighlights = () => {
                 {activeTab === "Tech Stack" && (
                     <div
                         ref={techStackRef}
-                        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-6 px-4"
+                        className="
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      md:grid-cols-3
+      lg:grid-cols-4
+      xl:grid-cols-5
+      justify-items-center
+      gap-4 sm:gap-6 px-4
+    "
                     >
                         {techStack.map((tech, index) => (
                             <div
                                 key={index}
-                                className="bg-[#171717] w-[200px] h-[200px] border border-[#6C6C6C] hover:border-white rounded-xl p-4 flex flex-col items-center justify-center text-center transform transition duration-300 hover:scale-105"
+                                className="
+          bg-[#171717]
+          w-full         /* full width for grid col */
+          max-w-[245px]  /* max width for smallest screens */
+          sm:max-w-[280px]
+          md:max-w-[200px]
+          h-[200px]
+          border border-[#6C6C6C]
+          hover:border-white
+          rounded-xl
+          p-4
+          flex flex-col items-center justify-center text-center
+          transform transition duration-300 hover:scale-105
+        "
                             >
                                 <div
-                                    className="text-[60px] md:text-[80px] mb-3"
+                                    className="text-[48px] sm:text-[60px] md:text-[80px] mb-3"
                                     style={{ color: tech.color }}
                                 >
                                     {tech.icon}
                                 </div>
-                                <span className="text-gray-200 text-base md:text-lg">
-                  {tech.name}
-                </span>
+                                <span className="text-gray-200 text-sm sm:text-base md:text-lg">
+          {tech.name}
+        </span>
                             </div>
                         ))}
                     </div>
                 )}
+
 
                 {activeTab === "Projects" && (
                     <div

@@ -103,17 +103,38 @@ const OfferSection = () => {
                                 <div
                                     key={index}
                                     ref={(el) => (cardRefs.current[index] = el)}
-                                    className="bg-[#171717] w-[400px] h-[460px] border border-zinc-800 rounded-3xl p-8 justify-end flex flex-col items-start gap-4 transition-transform duration-300 hover:scale-105 hover:border-zinc-700 opacity-0"
+                                    className="
+      bg-[#171717]
+      border border-zinc-800
+      rounded-3xl
+      p-8
+      justify-end
+      flex flex-col items-start gap-4
+      transition-transform duration-300 hover:scale-105 hover:border-zinc-700
+      opacity-0
+
+      w-full
+      max-w-[280px]
+      sm:max-w-[320px]
+      md:max-w-[360px]
+      lg:max-w-[400px]
+      xl:max-w-[400px]
+
+      h-[420px]
+      sm:h-[440px]
+      md:h-[460px]
+    "
                                 >
                                     <img src={card.icon} alt={`Icon for ${card.title}`} className="w-16 h-16" />
-                                    <h3 className="font-newsreader-custom text-[28px] mb-6 font-semibold text-white">
+                                    <h3 className="font-newsreader-custom text-[24px] sm:text-[26px] md:text-[28px] mb-6 font-semibold text-white">
                                         {card.title}
                                     </h3>
-                                    <p className="font-palanquin-custom text-[17px] mb-4 text-neutral-400">
+                                    <p className="font-palanquin-custom text-[15px] sm:text-[16px] md:text-[17px] mb-4 text-neutral-400">
                                         {card.description}
                                     </p>
                                 </div>
                             ))}
+
                         </div>
                     </div>
                 </div>
