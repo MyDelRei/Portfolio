@@ -50,9 +50,7 @@ const NavBar = () => {
             transition={{ duration: 0.25 }}
             className="w-[220px] h-[360px] flex flex-col justify-center space-y-2 p-4 absolute right-0 mt-[25px] bg-[#232323] border border-[#444444] rounded-[22px] shadow-lg z-10"
         >
-            <Link to="/Portfolio/about" onClick={() => setIsDropdownOpen(false)} className="rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom text-[#D6D6D6] text-[20px] font-medium px-4 py-2 hover:rounded-full">
-                About
-            </Link>
+
             <Link to="/Portfolio/highlights" className="text-[#D6D6D6] text-[20px] font-palanquin-custom font-medium px-4 py-2 rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200">
                 Tech stack
             </Link>
@@ -98,13 +96,13 @@ const NavBar = () => {
                 <span className="text-[26px] pr-[15px]"><FaGithub /></span>
                 <span className="text-[20px]">Github</span>
             </a>
-            <a
-                href="#footer"
+            <Link
+                to="/Portfolio/contact"
                 className="flex items-center px-4 py-2 text-white rounded-full hover:bg-[#D6D6D6] hover:text-[#806032] transition-colors duration-200 font-palanquin-custom"
             >
                 <span className="text-[26px] pr-[15px]"><MdEmail /></span>
                 <span className="text-[20px]">Contact</span>
-            </a>
+            </Link>
 
 
         </motion.div>
